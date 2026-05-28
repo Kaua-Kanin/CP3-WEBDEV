@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes e Séries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- LOGIN -->
+  <div id="login-container" class="container">
+    <h1>🎬 Filmes & Séries</h1>
+
+    <input
+      type="text"
+      id="usuario"
+      placeholder="Digite o usuário"
+    />
+
+    <input
+      type="password"
+      id="senha"
+      placeholder="Digite a senha"
+    />
+
+    <button onclick="fazerLogin()">
+      Entrar
+    </button>
+
+    <p id="erro-login" class="erro"></p>
+  </div>
+
+  <!-- CRUD -->
+  <div id="app-container" class="container escondido">
+    <h1>Minha Lista de Filmes & Séries</h1>
+
+    <input
+      type="text"
+      id="novo-item"
+      placeholder="Digite um filme ou série"
+    />
+
+    <div class="botoes">
+      <button onclick="adicionarInicio()">
+        Adicionar no início
+      </button>
+
+      <button onclick="adicionarFinal()">
+        Adicionar no final
+      </button>
+    </div>
+
+    <p id="erro-item" class="erro"></p>
+
+    <ul id="lista"></ul>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
